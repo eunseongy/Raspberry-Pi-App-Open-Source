@@ -64,7 +64,9 @@ public class MainActivity extends AppCompatActivity {
         EditText ed_text = findViewById(R.id.ed_text);
         TextView tv = findViewById(R.id.tv);
 
-        if (!blead.isEnabled()) blead.enable();
+        if (!blead.isEnabled()) {
+            blead.enable();
+        }
 
         bt_add.setOnClickListener(new OnClickListener() {
             @Override

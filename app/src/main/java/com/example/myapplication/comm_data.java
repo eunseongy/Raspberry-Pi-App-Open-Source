@@ -13,6 +13,7 @@ import retrofit2.http.Query;
 public interface comm_data {
 
     //Key-Value 방식의 데이터 전송
+
     @FormUrlEncoded
     @POST("dustsensor/commtest/")
     Call<String> post(
