@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/t"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_paired"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButtonPaired"
+        android:text="Paired Devices"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_status" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButtonSend"
+        android:text="Send a"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_paired" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="318dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_send" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/listview"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/tv3"
+        tools:layout_editor_absoluteX="57dp" />
+
+    <Button
+        android:id="@+id/btn_adv"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Advertising mode"
+        app:layout_constraintBottom_toTopOf="@+id/btn_send"
+        app:layout_constraintStart_toEndOf="@+id/btn_paired"
+        app:layout_constraintTop_toBottomOf="@+id/text_status" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
