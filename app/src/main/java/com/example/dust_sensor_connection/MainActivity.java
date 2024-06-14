@@ -206,7 +206,7 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                         comm_data service = retrofit.create(comm_data.class);
-                 Log.e("testtest", wifidata);
+//                 Log.e("testtest", wifidata);
 
                         Call<String> call = null;
                         call = service.location(wifidata);
